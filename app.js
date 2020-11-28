@@ -100,18 +100,31 @@ function appMenu() {
 
     function addEngineer() {
         inquirer.prompt([
-            //
-            // YOUR CODE HERE
-            // CREATE OBJECTS OF QUESTIONS FOR ENGINEER
-            //
+            {
+                type: 'input',
+                name: 'engineerName',
+                message: 'What is your name?',
+            },
+            {
+                type: 'input',
+                name: 'engineerId',
+                message: 'What is your Id number?',
+            },
+            {
+                type: 'input',
+                name: 'engineerEmail',
+                message: 'What is your email?',
+            },
+            {
+                type: 'input',
+                name: 'engineerGithub',
+                message: 'What is your Github username?',
+            },
+            
         ]).then(answers => {
-            //
-            // YOUR CODE HERE
-            // 1. CREATE A VARIABLE TO STORE THE ENGINEER OBJECT INSTANTIATED WITH THE ENGINEER CLASS, PASSING ANSWERS PROPERTIES AS INPUT AURGUMENTS 
-            //    TO THE ENGINEER CLASS CONSTRUCTOR
-            // 2. ADD (PUSH) THE ENGINEER VARIABLE TO the teamMembers ARRAY
-            // 3. ADD (PUSH) THE ENGINERR ID TO THE idArray ARRAY
-            // 
+            const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
+            teamMembers.push(engineer);
+            idArray.push(answers.engineerId);
 
             createTeam();
         });
