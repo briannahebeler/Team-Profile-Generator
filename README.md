@@ -2,7 +2,7 @@
 
 ## Description
 
-A Node CLI that generates profiles for each member of a software engineering team. This command line application accepts user information to generate an HTML webpage that displays a team roster of summaries for each team member in order for the user to quick;y access emails and GitHub profiles for all team members.
+A Node CLI that generates profiles for each member of a software engineering team. This application accepts user information to generate an HTML webpage that displays a team roster of summaries for each team member in order for the user to quickly access emails and GitHub profiles for all team members.
 
 ## Directions from class repo:
 
@@ -12,19 +12,6 @@ It is recommended that you follow this workflow:
 2. Create or update classes to pass a single test case
 3. Repeat
 🎗 Remember, you can run the tests at any time with `npm run test`
-
-It is recommended that you start with a directory structure that looks like this:
-```
-lib/           // classes and helper code
-output/        // rendered output
-templates/     // HTML template(s)
-test/          // jest tests
-  Employee.test.js
-  Engineer.test.js
-  Intern.test.js
-  Manager.test.js
-app.js         // Runs the application
-```
 
 ### Hints
 
@@ -76,3 +63,6 @@ The project must generate a `team.html` page in the `output` directory, that dis
 
 ## Video
 * A video demonstrating the entirety of the app's functionality
+
+## Link to repo:
+https://github.com/briannahebeler/Team-Profile-Generator
