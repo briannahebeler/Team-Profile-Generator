@@ -43,10 +43,26 @@ function appMenu() {
     function createManager() {
         console.log("Please build your team");
         inquirer.prompt([
-            //
-            // YOUR CODE HERE:
-            // CREATE OBJECTS OF QUESTIONS HERE FOR MANAGER
-            //
+            {
+                type: 'input',
+                name: 'managerName',
+                message: 'What is your name?',
+            },
+            {
+                type: 'input',
+                name: 'managerId',
+                message: 'What is your Id number?',
+            },
+            {
+                type: 'input',
+                name: 'managerEmail',
+                message: 'What is your email?',
+            },
+            {
+                type: 'input',
+                name: 'managerOfficeNumber',
+                message: 'What is your office number?',
+            },
         ]).then(answers => {
             const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
             teamMembers.push(manager);
