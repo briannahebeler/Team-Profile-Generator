@@ -132,18 +132,30 @@ function appMenu() {
 
     function addIntern() {
         inquirer.prompt([
-            //
-            // YOUR CODE HERE
-            // CREATE OBJECTS OF QUESTIONS FOR ENGINEER
-            //
+            {
+                type: 'input',
+                name: 'internName',
+                message: 'What is your name?',
+            },
+            {
+                type: 'input',
+                name: 'internId',
+                message: 'What is your Id number?',
+            },
+            {
+                type: 'input',
+                name: 'internEmail',
+                message: 'What is your email?',
+            },
+            {
+                type: 'input',
+                name: 'internSchool',
+                message: 'What school do you go to?',
+            },
         ]).then(answers => {
-            //
-            // YOUR CODE HERE
-            // 1. CREATE A VARIABLE TO STORE THE INTERN OBJECT INSTANTIATED WITH THE INTERN CLASS, PASSING ANSWERS PROPERTIES AS INPUT AURGUMENTS 
-            //    TO THE INTERN CLASS CONSTRUCTOR
-            // 2. ADD (PUSH) THE INTERN VARIABLE TO the teamMembers ARRAY
-            // 3. ADD (PUSH) THE INTERN ID TO THE idArray ARRAY
-            // 
+            const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
+            teamMembers.push(intern);
+            idArray.push(answers.internId);
 
             createTeam();
         });
