@@ -135,7 +135,7 @@ function appMenu() {
             {
                 type: 'input',
                 name: 'internName',
-                message: 'What is the inters name?',
+                message: 'What is the interns name?',
             },
             {
                 type: 'input',
@@ -145,7 +145,7 @@ function appMenu() {
             {
                 type: 'input',
                 name: 'internEmail',
-                message: 'What is the inters email?',
+                message: 'What is the interns email?',
             },
             {
                 type: 'input',
