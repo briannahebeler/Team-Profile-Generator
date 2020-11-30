@@ -16,8 +16,8 @@ This generator requires the user to install node.js and then the inquirer depend
 
 ## Usage
 Run the code through the terminal. Use the command "node app.js" to prompt the questions used to generate the team profile HTML.
-![](./assets/)
-Checkout video of application here: 
+![](./assets/screenshot.png)
+Checkout video of application here: https://youtu.be/N9DYb1cL9bA
 
 ## Contributing
 To contribute to this project you can fork this GitHub repository.
