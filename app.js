@@ -46,22 +46,22 @@ function appMenu() {
             {
                 type: 'input',
                 name: 'managerName',
-                message: 'What is your name?',
+                message: 'What is the managers name?',
             },
             {
                 type: 'input',
                 name: 'managerId',
-                message: 'What is your Id number?',
+                message: 'What is the managers Id number?',
             },
             {
                 type: 'input',
                 name: 'managerEmail',
-                message: 'What is your email?',
+                message: 'What is the managers email?',
             },
             {
                 type: 'input',
                 name: 'managerOfficeNumber',
-                message: 'What is your office number?',
+                message: 'What is the managers office number?',
             },
         ]).then(answers => {
             const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
@@ -103,22 +103,22 @@ function appMenu() {
             {
                 type: 'input',
                 name: 'engineerName',
-                message: 'What is your name?',
+                message: 'What is the engineers name?',
             },
             {
                 type: 'input',
                 name: 'engineerId',
-                message: 'What is your Id number?',
+                message: 'What is the engineers Id number?',
             },
             {
                 type: 'input',
                 name: 'engineerEmail',
-                message: 'What is your email?',
+                message: 'What is the engineers email?',
             },
             {
                 type: 'input',
                 name: 'engineerGithub',
-                message: 'What is your Github username?',
+                message: 'What is the engineers Github username?',
             },
             
         ]).then(answers => {
@@ -135,22 +135,22 @@ function appMenu() {
             {
                 type: 'input',
                 name: 'internName',
-                message: 'What is your name?',
+                message: 'What is the inters name?',
             },
             {
                 type: 'input',
                 name: 'internId',
-                message: 'What is your Id number?',
+                message: 'What is the interns Id number?',
             },
             {
                 type: 'input',
                 name: 'internEmail',
-                message: 'What is your email?',
+                message: 'What is the inters email?',
             },
             {
                 type: 'input',
                 name: 'internSchool',
-                message: 'What school do you go to?',
+                message: 'What school does the intern go to?',
             },
         ]).then(answers => {
             const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
